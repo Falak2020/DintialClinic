@@ -3,12 +3,13 @@
 }
 
 html, body {
-    font-weight: 400;
+    font-weight: 350;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 15px;
     margin: 0;
     padding: 0;
+    
 }
 
 .border {
@@ -22,8 +23,7 @@ html, body {
 .flex-navbartop{
     display: flex;
     justify-content:space-between;  
-    align-items: center;
-    height: 60px;
+    align-items: center; 
     
 }
 .border-bottom{
@@ -33,34 +33,33 @@ html, body {
 {   
     display: flex;
     justify-content:space-between;  
-    
     align-items: center;
-    height: 179px;
 }
-a {
+.border-bottom  .container .socialmedia a {
     color: #2BAAEC;
     text-decoration: none;
     background-color: transparent;
 }
   
-a:hover {
+.border-bottom  .container .socialmedia a:hover{
     color: #25E6C8;
 }
-
+nav>div>div>div>a{
+    color:#363636;
+}
 .collapse:not(.show) {
     display: none;
-}
-nav>div>div {
-    color:#626262;
 }
 
  .border-bottom .flex-navbartop .hours i {
     color: #2BAAEC;
     margin-right: 0.5rem;
     font-size: 1.2em;
+    padding-top: 0.3rem;
 }
 .border-bottom .flex-navbartop .socialmedia{
-   padding: 0 10rem;
+   padding: 0 7rem;
+  
 }
 .border-bottom .flex-navbartop .socialmedia a {
     margin: 0 0.5rem;
@@ -98,22 +97,20 @@ nav>div>div {
     padding: 0;
     text-decoration: none;
 }
-/*-----------------------------*/
+/*-----------Section 1 Styling------------------*/
 .first-section{
     display:flex;
     justify-content: space-between;
-    height:700px;
+    /*height:700px;*/
     background-color: #DEDEDE;
     }
-    .image{
-       padding-top: 3rem;
+    .image-section1{
+       padding-top: 3.3rem;
         margin-left:7rem;    
      
     }
     .paragraph{
-     padding: 10rem 5rem;
-     
-  
+     padding: 1rem 1rem;
     }
     .button-1{
         background-color:#25E6C8 ;
@@ -130,8 +127,153 @@ nav>div>div {
         color: #363636;
         font-weight:500;
     }
+/*-----------Section 2 Styling------------------*/
+.second-section{
+    display:flex;
+    justify-content:space-between;
+height: 700px;
+}
+
+.paragraph-1{
+   padding:1rem 1rem;
+}
+.image-section2{
+   padding-right:10rem;
+   padding-top:5rem; 
+   height: 733px;
+   
+}
+#section-2>div>ul>li>h2{
+   font-size: 20px;
+   font-weight: 300;
+   color: #2BAAEC;
+   margin-bottom: 0;
+   margin-top: 0.5rem;
+   text-align: center;
+}
+#section-2>div>h1{
+    font-size: 30px;
+    color: #363636;
+    font-weight:500;
+   margin-bottom: 0rem; 
+}
+#section-2>div>hr{
+   height:3px;
+   border-width:0;
+   background-color:#25E6C8;
+   margin-bottom: 2rem;
+
+}
+.flex-list{
+  display: flex; 
+  list-style: none;
+  justify-content:space-between;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+ span{
+     color:#2BAAEC;
+}
+.margin-bottom-paragraph{
+    margin-top: 2rem;
+}
+/*-----------Section 3 Styling------------------*/
+.section3-bgcolor{
+    background-color: #F7F7F7;  
+    height: 1200px;   
+}
+#section-3 {
+    background-color: #F7F7F7;
+
+}
+  #section-3>div>h2{
+    padding-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;  
+    font-size: 20pt;
+    color:#363636 ;
+    font-weight: 300;
+}
+#section-3>div>hr{
+    height:3px;
+    border-width:0;
+    background-color:#25E6C8;
+    width:300px;
+}
+h3{
+    font-size: 22px;
+    color: #363636;
+    font-weight: 300;
+   
+}
+.image-background{
+    width:100px;
+    height: 100px;
+    background-color:#25E6C8;
+    border-radius: 50px;
+    margin:2rem auto;
+    padding:1rem;
+}
+
+.center-image{
+    text-align: center; 
+    margin-bottom: 3rem;
+  }
+ .div-border{
+     width:380px;
+     height:400px;
+     background-color:#FFFFFF;
+     text-align: center;  
+     margin-top:1rem;
+ }
+.flex-cards{
+    display: flex;
+    align-items: center;
+    
+    flex-direction:column; 
+      
+}
 
 
+/*----------------------------------------------*/
+/*-------------------Section-4 Styling-------------------*/
+.section4-bgcolor{
+    background-color: #2BAAEC; 
+   height: 100px; 
+}
+.button-2{
+    height: 35px;
+    background-color: #FFFFFF;
+    color: #2BAAEC;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1rem;
+}
+.flex-section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.section-font{
+font-size: 16px;
+color: #FFFFFF;
+font-weight: 200;
+margin-top: 1rem;
+}
+/*--------------------------------------*/
+/*-----------------Footer---------------------*/
+.footer-background{
+    height:40px;
+    background-color: #2ba5ec;
+    font-size: 16px;
+    text-align: center;
+    padding:2rem 0;
+    border: 1px  #2b78ec;
+    color:#ffffff9d; 
+}
+/*--------------------------------------*/
 @media (min-width: 768px) {
     .nav-link {
         padding-right: 0.5rem;
@@ -153,6 +295,11 @@ nav>div>div {
     .container {
         max-width: 720px;
     }
+    .navbar-brand img {
+        height: 4rem;
+        
+    }
+    
     .border-bottom .flex-navbartop .socialmedia{
         padding: 0.5rem 1rem;
      }
@@ -161,7 +308,72 @@ nav>div>div {
         font-size:50px;
         color: #363636;
     }
-
+    #section-2>div>h1{
+        font-size:50px;
+        color: #363636; 
+    }
+    .paragraph-1{
+        padding:4rem 7rem; 
+     }
+     .paragraph{
+        padding: 10rem 5rem;
+        
+ }
+ #section-2>div>ul>li>h2{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    padding-right: 4rem;
+ }
+ #section-3>div>h2{
+    padding-top: 5rem;
+    font-size: 40px;   
+}
+#section-3>div>hr{
+    margin-bottom: 2rem;
+    width:450px;
+}
+ .div-border{
+ margin-top: 2rem;
+ }
+ .flex-cards{
+     flex-wrap: wrap;
+     justify-content: space-between;
+     flex-direction: row;
+     padding:0 7rem;
+ }
+ .button-2{
+    width:285px;
+    height: 60px;
+    background-color: #FFFFFF;
+    color: #2BAAEC;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.flex-section-4{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 12rem;  
+    background-color: #2BAAEC;   
+    height: 200px;
+   
+}
+#section-3 {
+    height: 1200px;
+}
+.section4-bgcolor{
+   height: 200px; 
+}
+.section-font{
+    font-size: 30px;
+    
+}
+.footer-background{
+    height:80px;
+}
 }
 
 @media (min-width: 992px) {
