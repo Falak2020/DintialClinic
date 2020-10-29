@@ -1,17 +1,27 @@
+
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif; 
+*/
+
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
-    font-weight: 350;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.5;
-    font-size: 15px;
+html, body ,p {
     margin: 0;
     padding: 0;
-    
+    font-weight: 350;
+    font-family:'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #626262;
+   
 }
-
+.bg-gray{
+    background-color: #DEDEDE;
+}
 .border {
     border: 1px solid black;
 }
@@ -90,115 +100,119 @@ nav>div>div>div>a{
 
 .navbar-nav {
     display: flex;
-    flex-direction: column;
+    
 }
 
-.nav-link {
+.nav-link{
+    display: flex;
     padding: 0;
     text-decoration: none;
 }
+
 /*-----------Section 1 Styling------------------*/
-.first-section{
-    display:flex;
-    justify-content: space-between;
-    /*height:700px;*/
-    background-color: #DEDEDE;
-    }
-    .image-section1{
-       padding-top: 3.3rem;
-        margin-left:7rem;    
-     
-    }
-    .paragraph{
-     padding: 1rem 1rem;
-    }
-    .button-1{
-        background-color:#25E6C8 ;
-        color:#FFFFFF;
-        font-size:18px;
-        border:none;
-        height: 60px;
-        width:239px;
-        border-radius: 10px;
-        margin-top: 2rem;
-    }
-    section>div>div>h1{
-        font-size: 30px;
-        color: #363636;
-        font-weight:500;
-    }
-/*-----------Section 2 Styling------------------*/
-.second-section{
-    display:flex;
-    justify-content:space-between;
-height: 700px;
+
+.image-section1{
+       margin-top:2rem;
+       margin-bottom: 0;
+       
+}
+.paragraph{
+    
 }
 
-.paragraph-1{
-   padding:1rem 1rem;
+.button-1{
+    display: inline-block;
+    background-color:#25E6C8 ;
+    font-weight: 400;
+    color:#FFFFFF;
+    font-size:1rem;
+    border:none;
+    height: 60px;
+    width:239px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    }
+#section1 .container{
+    padding: 0;
 }
-.image-section2{
-   padding-right:10rem;
-   padding-top:5rem; 
-   height: 733px;
+.button-1:hover{
+    cursor: pointer;
+    background: #2BAAEC;   
+}
+section>div>div>h1{
+        font-size: 30px;
+        color: #363636;
+        font-weight:300;
+}
+/*-----------Section 2 Styling------------------*/
+#section-2 .container{
+display:flex;
+justify-content:space-between;
+padding: 0;
+}
+.paragraph-2{
    
 }
-#section-2>div>ul>li>h2{
+.image-section2{
+    margin-top: 4rem;
+}
+
+#section-2 .container .paragraph-2 .container h2{
    font-size: 20px;
    font-weight: 300;
    color: #2BAAEC;
    margin-bottom: 0;
    margin-top: 0.5rem;
-   text-align: center;
 }
-#section-2>div>h1{
+#section-2 .container .paragraph-2 .container li{
+    margin-right: 0rem;
+    text-align: center;
+}
+#section-2 .container .paragraph-2 h1{
     font-size: 30px;
     color: #363636;
     font-weight:500;
    margin-bottom: 0rem; 
 }
-#section-2>div>hr{
+#section-2 .container .paragraph-2 hr{
    height:3px;
    border-width:0;
    background-color:#25E6C8;
    margin-bottom: 2rem;
-
 }
-.flex-list{
+#section-2 .container .paragraph-2 .container{
   display: flex; 
   list-style: none;
   justify-content:space-between;
   padding-left: 0;
-  flex-wrap: wrap;
+  padding: 0;
+  
 }
  span{
      color:#2BAAEC;
 }
-.margin-bottom-paragraph{
+.margin-top-paragraph{
     margin-top: 2rem;
 }
 /*-----------Section 3 Styling------------------*/
 .section3-bgcolor{
-    background-color: #F7F7F7;  
-    height: 1200px;   
+    background-color: #F7F7F7;    
 }
-#section-3 {
-    background-color: #F7F7F7;
 
-}
-  #section-3>div>h2{
+  #section-3>div>div>h2{
+    margin: 0;
     padding-top: 1rem;
-    margin-bottom: 0rem;
     text-align: center;  
     font-size: 20pt;
     color:#363636 ;
     font-weight: 300;
 }
-#section-3>div>hr{
+#section-3>div>div>hr{
     height:3px;
     border-width:0;
     background-color:#25E6C8;
     width:300px;
+    margin-bottom: 1rem;
 }
 h3{
     font-size: 22px;
@@ -219,68 +233,80 @@ h3{
     text-align: center; 
     margin-bottom: 3rem;
   }
- .div-border{
-     width:380px;
-     height:400px;
+ .cards{
      background-color:#FFFFFF;
-     text-align: center;  
-     margin-top:1rem;
+     text-align: center;     
  }
+ 
+ #section-3 .grid .cards p{
+     margin:2rem 4rem 4rem 4rem;
+    
+ }
+ /*
 .flex-cards{
     display: flex;
     align-items: center;
-    
-    flex-direction:column; 
-      
+    flex-direction:column;   
 }
-
-
+*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:1rem;  
+}
 /*----------------------------------------------*/
 /*-------------------Section-4 Styling-------------------*/
 .section4-bgcolor{
     background-color: #2BAAEC; 
-   height: 100px; 
+  
 }
 .button-2{
+    display: inline-block;
     height: 35px;
     background-color: #FFFFFF;
     color: #2BAAEC;
     font-weight: bold;
     border-radius: 10px;
     border: none;
-    margin-top: 1rem;
+    margin: 1rem 0;    
 }
-.flex-section-4{
+.button-2:hover{
+    cursor: pointer;
+    background-color: #25E6C8;
+    color: #FFFFFF; 
+}
+#section-4 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
- 
 }
 .section-font{
-font-size: 16px;
 color: #FFFFFF;
-font-weight: 200;
-margin-top: 1rem;
+font-weight: 300;
+margin:1rem 0;
 }
 /*--------------------------------------*/
 /*-----------------Footer---------------------*/
 .footer-background{
-    height:40px;
+    
     background-color: #2ba5ec;
-    font-size: 16px;
     text-align: center;
-    padding:2rem 0;
+    padding:1rem 0;
     border: 1px  #2b78ec;
     color:#ffffff9d; 
 }
 /*--------------------------------------*/
 @media (min-width: 768px) {
-    .nav-link {
+    .nav-link a {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
+        text-decoration: none;
+    }
+    .nav-link a:hover{
+        color: #25E6C8;
     }
     
-    .navbar-nav {
+    .nav-link {
         flex-direction: row;
     }
 
@@ -297,82 +323,92 @@ margin-top: 1rem;
     }
     .navbar-brand img {
         height: 4rem;
-        
+        margin:2rem 0;
     }
     
     .border-bottom .flex-navbartop .socialmedia{
         padding: 0.5rem 1rem;
-     }
+    } 
+/*Section1 styling in wide screen*/
+    #section1 .container{
+        display:flex;
+    }
+    .paragraph{
+       margin-top: 11rem;
+       margin-left:3rem;         
+    }
+    #section1 h1{
+        font-family: 'Roboto Slab', serif;
+        font-size: 2.3rem;
+        font-weight: 300;
+        line-height: 1.1;
+    }
+    #section1 p {
+        font-size: 0.9rem;
+    }
+/*Section2 styling in wide screen*/
 
-    section>div>div>h1{
-        font-size:50px;
-        color: #363636;
+    #section-2 .container .paragraph-2 h1{
+       font-size:2rem;
+       font-family: 'Roboto Slab', serif;
+       font-weight: 200;
+       color: #363636; 
+       line-height: 1.2;
+       margin-right: 10rem;
     }
-    #section-2>div>h1{
-        font-size:50px;
-        color: #363636; 
+    .paragraph-2{
+       margin-top: 5rem;
     }
-    .paragraph-1{
-        padding:4rem 7rem; 
-     }
-     .paragraph{
-        padding: 10rem 5rem;
-        
- }
- #section-2>div>ul>li>h2{
-    font-size: 40px;
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-    padding-right: 4rem;
- }
- #section-3>div>h2{
-    padding-top: 5rem;
-    font-size: 40px;   
-}
-#section-3>div>hr{
-    margin-bottom: 2rem;
-    width:450px;
-}
- .div-border{
- margin-top: 2rem;
- }
- .flex-cards{
-     flex-wrap: wrap;
-     justify-content: space-between;
-     flex-direction: row;
-     padding:0 7rem;
- }
+
+     #section-2 .container .paragraph-2 .container h2{
+       font-size: 40px;
+       margin-bottom: 0;
+       margin-top: 2rem;
+    
+    }
+    #section-2 .container .paragraph-2 .container li{
+       margin-right: 5rem;
+    }
+ /*------------------------------------*/
+ /*-Section3 Style in the wide screen--*/
+
+    #section-3>div>div>h2{
+       margin-top:0rem;
+       padding-top: 5rem;
+       font-size: 2.3rem; 
+       font-family: 'Roboto Slab', serif;
+       font-weight: 300;
+    }
+    #section-3>div>div>hr{
+       margin-bottom: 2rem;
+       width:450px;
+    }
+    .grid{ 
+        padding:0 7rem 7rem 7rem;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+ /*------------------------------------*/
+ /*-Section4 Style in the wide screen--*/
  .button-2{
     width:285px;
     height: 60px;
-    background-color: #FFFFFF;
-    color: #2BAAEC;
-    font-weight: bold;
-    border-radius: 10px;
-    border: none;
 }
-.flex-section-4{
+
+#section-4 .container{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0 12rem;  
-    background-color: #2BAAEC;   
-    height: 200px;
-   
 }
-#section-3 {
-    height: 1200px;
-}
-.section4-bgcolor{
-   height: 200px; 
-}
+
 .section-font{
     font-size: 30px;
-    
+    font-weight:300;
+    margin:4rem 0;
+    font-family: 'Roboto Slab', serif;   
 }
 .footer-background{
-    height:80px;
+    padding: 2rem 0;
 }
 }
 
