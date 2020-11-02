@@ -1,10 +1,4 @@
 
-/* 
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Slab', serif; 
-*/
-
-
 * {
     box-sizing: border-box;
 }
@@ -12,97 +6,78 @@
 html, body ,p {
     margin: 0;
     padding: 0;
-    font-weight: 350;
+    font-weight:300;
     font-family:'Roboto', sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 16px;
-    color: #626262;
-   
+    color:#626262;
 }
 .bg-gray{
     background-color: #DEDEDE;
-}
-.border {
-    border: 1px solid black;
 }
 .container{
     width: 100%;
     margin: 0 auto;
     padding: 0.5rem 1rem;
 }
-.flex-navbartop{
+hr{
+    height:3px;
+    border-width:0;
+    background-color:#25E6C8;
+}
+h1,h2,h3,a{
+font-family:'Roboto Slab', serif;
+}
+/*---------------------Navbar Style------------------------*/
+.flex-navbar{
     display: flex;
     justify-content:space-between;  
     align-items: center; 
-    
 }
 .border-bottom{
      border-bottom:  1px solid #707070;
  }
- .flex-navbarbottom
-{   
-    display: flex;
-    justify-content:space-between;  
-    align-items: center;
-}
+ 
 .border-bottom  .container .socialmedia a {
     color: #2BAAEC;
     text-decoration: none;
-    background-color: transparent;
 }
   
 .border-bottom  .container .socialmedia a:hover{
     color: #25E6C8;
 }
-nav>div>div>div>a{
-    color:#363636;
-}
 .collapse:not(.show) {
     display: none;
 }
 
- .border-bottom .flex-navbartop .hours i {
+ .border-bottom .flex-navbar .hours i {
     color: #2BAAEC;
     margin-right: 0.5rem;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding-top: 0.3rem;
 }
-.border-bottom .flex-navbartop .socialmedia{
-   padding: 0 7rem;
-  
+.border-bottom .flex-navbar .socialmedia{ 
+   padding: 0 6rem;
 }
-.border-bottom .flex-navbartop .socialmedia a {
+.border-bottom .flex-navbar .socialmedia a {
     margin: 0 0.5rem;
 }
-
-.navbar-brand {
-    display: inline-block;
-    font-size: 1.5rem;
-    color: black;
-    margin-right: 1rem;  
-}
-
-.navbar-brand img {
+.flex-navbar img {
     height: 3rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
-
 .menue {
+    display: inline-block;
     font-size: 2.5rem;
     color:#2BAAEC;
     background-color: transparent;
     border: 1px solid transparent;
+    cursor: pointer;
 }
-
-.navbar-collapse {
-    align-items: center;
+.menue:hover{
+background-color:#25E6C8;
+color: #FFFFFF;
 }
-
-.navbar-nav {
-    display: flex;
-    
-}
-
 .nav-link{
     display: flex;
     padding: 0;
@@ -112,81 +87,84 @@ nav>div>div>div>a{
 /*-----------Section 1 Styling------------------*/
 
 .image-section1{
-       margin-top:2rem;
-       margin-bottom: 0;
-       
+    height: 500px;
+    width: 450px;
+    margin-top: 1rem;
+    flex:1;       
 }
 .paragraph{
-    
+ margin: 0.5rem;   
+ flex:1;
 }
 
 .button-1{
     display: inline-block;
     background-color:#25E6C8 ;
-    font-weight: 400;
+    font-weight: bold;
     color:#FFFFFF;
     font-size:1rem;
     border:none;
-    height: 60px;
-    width:239px;
+    height: 50px;
+    width:200px;
     border-radius: 10px;
-    margin-top: 2rem;
+    margin: 1rem 0;
     }
-#section1 .container{
-    padding: 0;
+#showcase .container{
+    padding: 0;   
 }
 .button-1:hover{
     cursor: pointer;
     background: #2BAAEC;   
 }
-section>div>div>h1{
+#showcase .paragraph h1{
         font-size: 30px;
         color: #363636;
         font-weight:300;
+        margin-bottom: 0.5rem;
 }
 /*-----------Section 2 Styling------------------*/
-#section-2 .container{
+#about-us .container{
 display:flex;
 justify-content:space-between;
 padding: 0;
 }
-.paragraph-2{
-   
+#about-us .container .paragraph-2 h1{
+    font-size:1.5rem;
+    color: #363636; 
+    line-height: 1.2;
+    font-weight: 300px;
+    
+ }
+#about-us .container .paragraph-2 h1,hr{
+    margin-left: 0.5rem;
 }
-.image-section2{
-    margin-top: 4rem;
+#about-us .container .paragraph-2 p{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
 }
 
-#section-2 .container .paragraph-2 .container h2{
+.image-section2{
+    margin-top: 4rem;
+    height: 600px;
+}
+#about-us .container .paragraph-2 .container h2{
    font-size: 20px;
    font-weight: 300;
    color: #2BAAEC;
    margin-bottom: 0;
    margin-top: 0.5rem;
 }
-#section-2 .container .paragraph-2 .container li{
-    margin-right: 0rem;
-    text-align: center;
+#about-us .container .paragraph-2 .container li{
+    margin-right: 0rem;   
 }
-#section-2 .container .paragraph-2 h1{
-    font-size: 30px;
-    color: #363636;
-    font-weight:500;
-   margin-bottom: 0rem; 
+
+#about-us .container .paragraph-2 hr{
+   margin-bottom: 1rem;
 }
-#section-2 .container .paragraph-2 hr{
-   height:3px;
-   border-width:0;
-   background-color:#25E6C8;
-   margin-bottom: 2rem;
-}
-#section-2 .container .paragraph-2 .container{
+#about-us .container .paragraph-2 .container{
   display: flex; 
   list-style: none;
-  justify-content:space-between;
-  padding-left: 0;
-  padding: 0;
-  
+  justify-content:space-between; 
 }
  span{
      color:#2BAAEC;
@@ -194,12 +172,13 @@ padding: 0;
 .margin-top-paragraph{
     margin-top: 2rem;
 }
+/*----------------------------------------------*/
 /*-----------Section 3 Styling------------------*/
-.section3-bgcolor{
+/*----------------------------------------------*/
+.services-bgcolor{
     background-color: #F7F7F7;    
 }
-
-  #section-3>div>div>h2{
+  #services h2{
     margin: 0;
     padding-top: 1rem;
     text-align: center;  
@@ -207,18 +186,15 @@ padding: 0;
     color:#363636 ;
     font-weight: 300;
 }
-#section-3>div>div>hr{
-    height:3px;
-    border-width:0;
-    background-color:#25E6C8;
+#services hr{
     width:300px;
+    margin:0.5rem auto; 
     margin-bottom: 1rem;
 }
-h3{
-    font-size: 22px;
+#services .grid .cards h3{
+    font-size:1.3rem ;
     color: #363636;
-    font-weight: 300;
-   
+    font-weight: 300;  
 }
 .image-background{
     width:100px;
@@ -229,36 +205,25 @@ h3{
     padding:1rem;
 }
 
-.center-image{
-    text-align: center; 
-    margin-bottom: 3rem;
-  }
  .cards{
      background-color:#FFFFFF;
-     text-align: center;     
+     text-align: center;   
  }
  
- #section-3 .grid .cards p{
-     margin:2rem 4rem 4rem 4rem;
-    
+ #services .grid .cards p{
+     margin:0rem 2rem 4rem 2rem;
+     font-size:0.9rem;
  }
- /*
-.flex-cards{
-    display: flex;
-    align-items: center;
-    flex-direction:column;   
-}
-*/
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap:1rem;  
+     
 }
 /*----------------------------------------------*/
-/*-------------------Section-4 Styling-------------------*/
-.section4-bgcolor{
-    background-color: #2BAAEC; 
-  
+/*-------------------Section-4 Styling----------*/
+/*----------------------------------------------*/
+.appointment-bgcolor{
+    background-color:#4EB4E9; 
 }
 .button-2{
     display: inline-block;
@@ -275,41 +240,38 @@ h3{
     background-color: #25E6C8;
     color: #FFFFFF; 
 }
-#section-4 .container{
+#appointment .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section-font{
+#appointment h1{
 color: #FFFFFF;
 font-weight: 300;
 margin:1rem 0;
+font-size: 1rem;
 }
-/*--------------------------------------*/
+/*--------------------------------------------*/
 /*-----------------Footer---------------------*/
+/*--------------------------------------------*/
 .footer-background{
-    
-    background-color: #2ba5ec;
+    background-color: #2BAAEC;
     text-align: center;
     padding:1rem 0;
-    border: 1px  #2b78ec;
     color:#ffffff9d; 
 }
 /*--------------------------------------*/
 @media (min-width: 768px) {
     .nav-link a {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-        text-decoration: none;
+       padding: 0 0.5rem;
+       text-decoration: none;
+       color: #363636;
     }
+    
     .nav-link a:hover{
         color: #25E6C8;
     }
     
-    .nav-link {
-        flex-direction: row;
-    }
-
     .menue {
         display: none;
     }
@@ -321,95 +283,103 @@ margin:1rem 0;
     .container {
         max-width: 720px;
     }
-    .navbar-brand img {
+    .flex-navbar  img {
         height: 4rem;
         margin:2rem 0;
     }
     
-    .border-bottom .flex-navbartop .socialmedia{
-        padding: 0.5rem 1rem;
+    .border-bottom .flex-navbar .socialmedia, .nav-link{
+        padding: 0.5rem 0.5rem;
     } 
-/*Section1 styling in wide screen*/
-    #section1 .container{
-        display:flex;
+/*Section1 styling in the wide screen*/
+    #showcase .container{
+        display:flex;       
     }
     .paragraph{
-       margin-top: 11rem;
-       margin-left:3rem;         
+       margin-top: 8rem;
+       margin-left:10rem;
+       margin-right: 0;         
     }
-    #section1 h1{
-        font-family: 'Roboto Slab', serif;
+    #showcase .paragraph h1{
         font-size: 2.3rem;
         font-weight: 300;
         line-height: 1.1;
+        margin-bottom: 2rem;
+       
     }
-    #section1 p {
+    #showcase p {
         font-size: 0.9rem;
     }
+    .button-1{
+        height: 60px;
+        width:239px;
+        margin-top: 2rem;
+        }
 /*Section2 styling in wide screen*/
-
-    #section-2 .container .paragraph-2 h1{
-       font-size:2rem;
-       font-family: 'Roboto Slab', serif;
-       font-weight: 200;
-       color: #363636; 
+    #about-us .container .paragraph-2 h1{
+       font-size:2rem; 
        line-height: 1.2;
        margin-right: 10rem;
     }
     .paragraph-2{
-       margin-top: 5rem;
+       margin-top: 6rem; 
     }
-
-     #section-2 .container .paragraph-2 .container h2{
-       font-size: 40px;
+    #about-us .container .paragraph-2 p{
+        margin-right: 5rem;
+    }
+    #about-us .container .paragraph-2 hr{
+        margin-bottom: 2rem; 
+     }
+     #about-us .container .paragraph-2 .container{
+        padding-right: 4rem;
+        margin-left: 0;
+     }
+     #about-us .container .paragraph-2 .container h2{
+       font-size: 2rem;
        margin-bottom: 0;
        margin-top: 2rem;
-    
-    }
-    #section-2 .container .paragraph-2 .container li{
-       margin-right: 5rem;
+       margin-left: 0.7rem;
     }
  /*------------------------------------*/
  /*-Section3 Style in the wide screen--*/
-
-    #section-3>div>div>h2{
+ /*------------------------------------*/
+    #services h2{
        margin-top:0rem;
        padding-top: 5rem;
        font-size: 2.3rem; 
-       font-family: 'Roboto Slab', serif;
        font-weight: 300;
     }
-    #section-3>div>div>hr{
-       margin-bottom: 2rem;
-       width:450px;
+    #services hr{
+       margin-bottom: 3rem;
+       width:450px;  
     }
     .grid{ 
         padding:0 7rem 7rem 7rem;
         grid-template-columns:1fr 1fr 1fr;
+        gap:1rem; 
     }
  /*------------------------------------*/
  /*-Section4 Style in the wide screen--*/
- .button-2{
-    width:285px;
-    height: 60px;
-}
+ /*------------------------------------*/
+    .button-2{
+       width:285px;
+       height: 60px;
+    }
+    #appointment h1{
+        font-size: 1.5rem;
+        margin:4rem 0;
+    }
 
-#section-4 .container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-}
+    #appointment .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
 
-.section-font{
-    font-size: 30px;
-    font-weight:300;
-    margin:4rem 0;
-    font-family: 'Roboto Slab', serif;   
-}
-.footer-background{
-    padding: 2rem 0;
-}
+    .footer-background{
+        padding: 1rem 0;
+    }  
 }
 
 @media (min-width: 992px) {
