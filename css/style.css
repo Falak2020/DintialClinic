@@ -1,4 +1,4 @@
-
+@import url("color.css");
 * {
     box-sizing: border-box;
 }
@@ -11,9 +11,6 @@ html, body ,p {
     line-height: 1.6;
     font-size: 16px;
     color:#626262;
-}
-.bg-gray{
-    background-color: #DEDEDE;
 }
 .container{
     width: 100%;
@@ -86,7 +83,7 @@ color: #FFFFFF;
     text-decoration: none;
 }
 
-/*-----------Section 1 Styling------------------*/
+/*-----------ShowcaseStyling------------------*/
 
 .image-section1{
     height: 500px;
@@ -97,11 +94,11 @@ color: #FFFFFF;
 .paragraph{
  margin: 0.5rem;   
  flex:1;
+ text-align: center;
 }
 
 .button-1{
     display: inline-block;
-    background-color:#25E6C8 ;
     font-weight: bold;
     color:#FFFFFF;
     font-size:1rem;
@@ -123,26 +120,24 @@ color: #FFFFFF;
         font-weight:300;
         margin-bottom: 0.5rem;
 }
-/*-----------Section 2 Styling------------------*/
+/*-----------About us Styling------------------*/
 #about-us .container{
 display:flex;
 justify-content:space-between;
 padding: 0;
 }
+#about-us .container .paragraph-2{
+    text-align: center;
+    margin:0 0.5rem;
+}
 #about-us .container .paragraph-2 h1{
     font-size:1.5rem;
     line-height: 1.2;
-    font-weight: 300px;
-   margin-right: 14rem;
-    
+    font-weight: 300px;  
  }
-#about-us .container .paragraph-2 h1,hr{
-    margin-left: 0.5rem;
-}
+
 #about-us .container .paragraph-2 p{
     font-size: 0.9rem;
-    margin-left: 0.5rem;
-    margin-right: 15rem;   
 }
 
 .image-section2{
@@ -154,27 +149,24 @@ padding: 0;
    font-weight: 300;
    color: #2BAAEC;
    margin-bottom: 0;
-   margin-top: 0.5rem;
+   margin-top: 0.5rem;  
 }
 #about-us .container .paragraph-2 hr{
-   margin-bottom: 1rem;
-   width:600px
-  
+   margin:0 2rem 1rem 2rem; 
 }
 #about-us .container .paragraph-2 .container{
-  display: flex; 
-  list-style: none;
-  flex-direction: column;
-  margin-left: 3rem;
+   display: flex;
+   flex-direction: column;
 }
+
  span{
      color:#2BAAEC;
 }
 .margin-top-paragraph{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 /*----------------------------------------------*/
-/*-----------Section 3 Styling------------------*/
+/*-----------Services Styling-------------------*/
 /*----------------------------------------------*/
 .services-bgcolor{
     background-color: #F7F7F7;    
@@ -220,15 +212,17 @@ padding: 0;
      
 }
 /*----------------------------------------------*/
-/*-------------------Section-4 Styling----------*/
+/*-----------------Appointment Styling----------*/
 /*----------------------------------------------*/
 .appointment-bgcolor{
     background-color:#4EB4E9; 
 }
+.overlay{
+    opacity: 80%;
+}
 .button-2{
     display: inline-block;
     height: 35px;
-    background-color: #FFFFFF;
     color: #2BAAEC;
     font-weight: bold;
     border-radius: 10px;
@@ -243,7 +237,7 @@ padding: 0;
 #appointment .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 #appointment h1{
 color: #FFFFFF;
@@ -254,17 +248,20 @@ font-size: 1rem;
 /*--------------------------------------------*/
 /*-----------------Footer---------------------*/
 /*--------------------------------------------*/
-.footer-background{
-    background-color: #2BAAEC;
+#footer{
     text-align: center;
     padding:1rem 0;
-    color:#ffffff9d; 
+    color:#F3FBFF;
+    font-size: 0.8rem; 
+    border-top:1px solid rgb(255, 255,255,0.2);
 }
+
 /*--------------------------------------*/
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
     }
+    
     .nav-link a {
        padding: 0 0.5rem;
        text-decoration: none;
@@ -291,14 +288,15 @@ font-size: 1rem;
     .border-bottom .flex-navbar .socialmedia, .nav-link{
         padding: 0.5rem 0.5rem;
     } 
-/*Section1 styling in the wide screen*/
+/*Showcase styling in the wide screen*/
     #showcase .container{
-        display:flex;       
+        display:flex;     
     }
     .paragraph{
        margin-top: 8rem;
        margin-left:10rem;
-       margin-right: 0;         
+       margin-right: 0;
+       text-align: left;        
     }
     #showcase .paragraph h1{
         font-size: 2.3rem;
@@ -315,20 +313,22 @@ font-size: 1rem;
         width:239px;
         margin-top: 2rem;
         }
-/*Section2 styling in wide screen*/
+/*About us styling in wide screen*/
     #about-us .container .paragraph-2 h1{
        font-size:2rem; 
        line-height: 1.2;
        margin-right: 10rem;
     }
-    .paragraph-2{
-       margin-top: 6rem; 
+    #about-us .container .paragraph-2{
+        text-align: left;
+        margin-top: 6rem;
     }
     #about-us .container .paragraph-2 p{
        margin-right: 5rem;
     }
     #about-us .container .paragraph-2 hr{
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
+        margin-left: 0; 
      }
      #about-us .container .paragraph-2 .container{
         flex-direction: row;
@@ -338,11 +338,13 @@ font-size: 1rem;
      #about-us .container .paragraph-2 .container h2{
        font-size: 2rem;
        margin-bottom: 0;
-       margin-top: 2rem;
-       margin-left: 0.7rem;
+       margin-top: 2rem;  
+    }
+    .margin-top-paragraph{
+       margin-top: 1.5rem;
     }
  /*------------------------------------*/
- /*-Section3 Style in the wide screen--*/
+ /*-Our services Style in the wide screen--*/
  /*------------------------------------*/
     #services h2{
        margin-top:0rem;
@@ -360,7 +362,7 @@ font-size: 1rem;
         gap:1rem; 
     }
  /*------------------------------------*/
- /*-Section4 Style in the wide screen--*/
+ /*-Appointment Style in the wide screen--*/
  /*------------------------------------*/
     .button-2{
        width:285px;
@@ -372,7 +374,6 @@ font-size: 1rem;
     }
 
     #appointment .container{
-        display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
@@ -392,5 +393,10 @@ font-size: 1rem;
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+}
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px;
     }
 }
