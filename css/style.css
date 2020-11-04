@@ -34,32 +34,30 @@ color: #363636;
     align-items: center; 
 }
 .border-bottom{
-     border-bottom:  1px solid #707070;
+     border-bottom: 1px solid rgb(112,112,112,0.3);
  }
  
 .border-bottom  .container .socialmedia a {
-    color: #2BAAEC;
-    text-decoration: none;
+   text-decoration: none;
+   color: #2BAAEC;
+    margin: 0 0.5rem;
 }
-  
 .border-bottom  .container .socialmedia a:hover{
     color: #25E6C8;
 }
 .collapse:not(.show) {
     display: none;
 }
-
- .border-bottom .flex-navbar .hours i {
-    color: #2BAAEC;
+.working-hours{
+font-size: 0.9rem;
+}
+.border-bottom .flex-navbar .hours i {
     margin-right: 0.5rem;
     font-size: 1.2rem;
     padding-top: 0.3rem;
 }
 .border-bottom .flex-navbar .socialmedia{ 
-   padding: 0 6rem;
-}
-.border-bottom .flex-navbar .socialmedia a {
-    margin: 0 0.5rem;
+   margin: 0 auto;
 }
 .flex-navbar img {
     height: 3rem;
@@ -68,14 +66,12 @@ color: #363636;
 .menue {
     display: inline-block;
     font-size: 2.5rem;
-    color:#2BAAEC;
     background-color: transparent;
     border: 1px solid transparent;
     cursor: pointer;
 }
 .menue:hover{
 background-color:#25E6C8;
-color: #FFFFFF;
 }
 .nav-link{
     display: flex;
@@ -83,13 +79,11 @@ color: #FFFFFF;
     text-decoration: none;
 }
 
-/*-----------ShowcaseStyling------------------*/
+/*-----------Showcase Style------------------*/
 
 .image-section1{
-    height: 500px;
-    width: 450px;
     margin-top: 1rem;
-    flex:1;       
+    flex:1;          
 }
 .paragraph{
  margin: 0.5rem;   
@@ -122,14 +116,16 @@ color: #FFFFFF;
 }
 /*-----------About us Styling------------------*/
 #about-us .container{
-display:flex;
-justify-content:space-between;
-padding: 0;
+    display:flex;
+    justify-content: space-between; 
+    padding: 0; 
 }
+
 #about-us .container .paragraph-2{
     text-align: center;
-    margin:0 0.5rem;
+    margin: 0 0.5rem;;
 }
+
 #about-us .container .paragraph-2 h1{
     font-size:1.5rem;
     line-height: 1.2;
@@ -251,7 +247,7 @@ font-size: 1rem;
 #footer{
     text-align: center;
     padding:1rem 0;
-    color:#F3FBFF;
+    color:rgba(243,251,255,0.5);
     font-size: 0.8rem; 
     border-top:1px solid rgb(255, 255,255,0.2);
 }
@@ -261,7 +257,9 @@ font-size: 1rem;
     .container {
         max-width: 720px;
     }
-    
+    .border-bottom .flex-navbar .socialmedia{ 
+        margin: 0;
+     }
     .nav-link a {
        padding: 0 0.5rem;
        text-decoration: none;
@@ -290,7 +288,8 @@ font-size: 1rem;
     } 
 /*Showcase styling in the wide screen*/
     #showcase .container{
-        display:flex;     
+        display:flex;  
+        justify-content: space-between;   
     }
     .paragraph{
        margin-top: 8rem;
@@ -322,6 +321,7 @@ font-size: 1rem;
     #about-us .container .paragraph-2{
         text-align: left;
         margin-top: 6rem;
+        margin-right: 4.5rem;
     }
     #about-us .container .paragraph-2 p{
        margin-right: 5rem;
